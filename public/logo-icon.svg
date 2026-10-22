@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="careGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f45a43" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <linearGradient id="hopeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+  <!-- Caring hands cradling a heart / sprout of hope -->
+  <circle cx="50" cy="50" r="46" fill="#fdfbf7" stroke="#f45a43" stroke-width="2" stroke-opacity="0.3"/>
+  <!-- Left Hand / Wing of care -->
+  <path d="M22 64 C22 50, 32 38, 48 34 C44 42, 43 52, 38 60 C34 65, 27 68, 22 64 Z" fill="url(#careGrad)"/>
+  <!-- Right Hand / Wing of hope -->
+  <path d="M78 64 C78 50, 68 38, 52 34 C56 42, 57 52, 62 60 C66 65, 73 68, 78 64 Z" fill="url(#hopeGrad)"/>
+  <!-- Center Heart & Rising Sun of Dignity -->
+  <circle cx="50" cy="30" r="8" fill="url(#careGrad)"/>
+  <path d="M42 45 C42 40, 50 36, 50 43 C50 36, 58 40, 58 45 C58 53, 50 58, 50 58 C50 58, 42 53, 42 45 Z" fill="#f45a43"/>
+  <!-- Base unifying cradle -->
+  <path d="M30 68 C40 76, 60 76, 70 68 C62 73, 38 73, 30 68 Z" fill="#059669" />
+</svg>

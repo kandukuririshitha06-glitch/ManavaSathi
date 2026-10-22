@@ -1,0 +1,168 @@
+export type SupportedLanguage =
+  | 'en'
+  | 'hi'
+  | 'te'
+  | 'ta'
+  | 'kn'
+  | 'ml'
+  | 'bn'
+  | 'mr'
+  | 'gu'
+  | 'pa'
+  | 'or'
+  | 'as'
+  | 'ur';
+
+export interface LanguageMeta {
+  code: SupportedLanguage;
+  name: string;
+  nativeName: string;
+  isComplete: boolean;
+}
+
+export const SUPPORTED_LANGUAGES: LanguageMeta[] = [
+  { code: 'en', name: 'English', nativeName: 'English', isComplete: true },
+  { code: 'hi', name: 'Hindi', nativeName: 'हिन्दी', isComplete: true },
+  { code: 'te', name: 'Telugu', nativeName: 'తెలుగు', isComplete: true },
+  { code: 'ta', name: 'Tamil', nativeName: 'தமிழ்', isComplete: true },
+  { code: 'kn', name: 'Kannada', nativeName: 'ಕನ್ನಡ', isComplete: false },
+  { code: 'ml', name: 'Malayalam', nativeName: 'മലയാളം', isComplete: false },
+  { code: 'bn', name: 'Bengali', nativeName: 'বাংলা', isComplete: false },
+  { code: 'mr', name: 'Marathi', nativeName: 'मराठी', isComplete: false },
+  { code: 'gu', name: 'Gujarati', nativeName: 'ગુજરાતી', isComplete: false },
+  { code: 'pa', name: 'Punjabi', nativeName: 'ਪੰਜਾਬੀ', isComplete: false },
+  { code: 'or', name: 'Odia', nativeName: 'ଓଡ଼ିଆ', isComplete: false },
+  { code: 'as', name: 'Assamese', nativeName: 'অসমীয়া', isComplete: false },
+  { code: 'ur', name: 'Urdu', nativeName: 'اردو', isComplete: false },
+];
+
+export const translations: Record<string, Record<string, string>> = {
+  en: {
+    app_name: 'ManavaSathi',
+    tagline: 'Every Human Deserves Care',
+    meaning: 'A companion for humanity across India',
+    find_help_near_me: 'Find Help Near Me',
+    donate_essentials: 'Donate Essentials',
+    become_volunteer: 'Become a Volunteer',
+    register_org: 'Register an Organization',
+    search_placeholder: 'Enter your city, village, locality, street, or PIN code...',
+    map_view: 'Interactive Map',
+    list_view: 'List View',
+    all_categories: 'All Assistance Categories',
+    food_assistance: 'Food Assistance Point',
+    clothing_donation: 'Clothing Donation Point',
+    shelter_service: 'Shelter & Accommodation',
+    hygiene_supplies: 'Hygiene & Essential Supplies',
+    medical_assistance: 'Medical or Health Assistance',
+    community_centre: 'Community Support Centre',
+    general_donation: 'General Humanitarian Donation Point',
+    urgent_request: 'Urgent Assistance Request',
+    volunteer_activity: 'Volunteer Activity Point',
+    verified: 'Verified Service',
+    pending_verification: 'Pending Verification',
+    temp_closed: 'Temporarily Closed',
+    needs_update: 'Needs Updated Information',
+    demo_mode_banner: 'Demo Mode Active — Fictional demonstration listings for evaluation. External Firebase & Razorpay integrations are ready for credentials.',
+    privacy_notice: 'Dignity Safeguard: ManavaSathi never exposes exact sleeping locations of vulnerable individuals or requires photos to receive aid.',
+    get_directions: 'Get Directions',
+    view_details: 'View Details',
+    report_inaccurate: 'Report Incorrect Information',
+    emergency_call: 'For immediate life-threatening emergencies, dial 112 / 108',
+  },
+  hi: {
+    app_name: 'मानव साथी',
+    tagline: 'हर मानव सेवा और सम्मान का हकदार है',
+    meaning: 'पूरे भारत में मानवता का साथी',
+    find_help_near_me: 'निकटतम सहायता खोजें',
+    donate_essentials: 'ज़रूरी वस्तुएं दान करें',
+    become_volunteer: 'स्वयंसेवक बनें',
+    register_org: 'संस्था पंजीकृत करें',
+    search_placeholder: 'अपना शहर, गाँव, इलाका या पिन कोड दर्ज करें...',
+    map_view: 'मानचित्र देखें',
+    list_view: 'सूची देखें',
+    all_categories: 'सभी सहायता श्रेणियां',
+    food_assistance: 'भोजन सहायता केंद्र',
+    clothing_donation: 'वस्त्र दान केंद्र',
+    shelter_service: 'आश्रय एवं विश्राम स्थल',
+    hygiene_supplies: 'स्वच्छता एवं आवश्यक सामग्री',
+    medical_assistance: 'चिकित्सा या स्वास्थ्य सहायता',
+    community_centre: 'सामुदायिक सहायता केंद्र',
+    general_donation: 'सामान्य मानवीय दान केंद्र',
+    urgent_request: 'त्वरित सहायता अनुरोध',
+    volunteer_activity: 'स्वयंसेवक गतिविधि',
+    verified: 'सत्यापित सेवा',
+    pending_verification: 'सत्यापन प्रक्रियाधीन',
+    temp_closed: 'अस्थायी रूप से बंद',
+    needs_update: 'अद्यतन जानकारी आवश्यक',
+    demo_mode_banner: 'डेमो मोड सक्रिय — मूल्यांकन हेतु काल्पनिक डेटा। फायरबेस एवं रेज़रपे एकीकरण तैयार है।',
+    privacy_notice: 'गरिमा सुरक्षा: मानव साथी कभी भी कमजोर लोगों के सटीक विश्राम स्थलों को सार्वजनिक नहीं करता है।',
+    get_directions: 'दिशा-निर्देश प्राप्त करें',
+    view_details: 'विवरण देखें',
+    report_inaccurate: 'गलत जानकारी की रिपोर्ट करें',
+    emergency_call: 'आपातकालीन सहायता के लिए 112 / 108 पर कॉल करें',
+  },
+  te: {
+    app_name: 'మానవసాథి',
+    tagline: 'ప్రతి మనిషికి ఆప్యాయత, సంరక్షణ హక్కు ఉంది',
+    meaning: 'భారతదేశం అంతటా మానవత్వానికి తోడుగా',
+    find_help_near_me: 'సమీపంలోని సహాయాన్ని కనుగొనండి',
+    donate_essentials: 'నిత్యావసర వస్తువులను దానం చేయండి',
+    become_volunteer: 'వాలంటీర్‌గా చేరండి',
+    register_org: 'సంస్థను నమోదు చేయండి',
+    search_placeholder: 'మీ నగరం, గ్రామం, ప్రాంతం లేదా పిన్ కోడ్ నమోదు చేయండి...',
+    map_view: 'మ్యాప్ వీక్షణ',
+    list_view: 'జాబితా వీక్షణ',
+    all_categories: 'అన్ని సహాయ రకాలు',
+    food_assistance: 'ఆహార సహాయ కేంద్రం',
+    clothing_donation: 'దుస్తుల విరాళ కేంద్రం',
+    shelter_service: 'ఆశ్రయం మరియు వసతి కేంద్రం',
+    hygiene_supplies: 'పారిశుధ్య మరియు నిత్యావసరాలు',
+    medical_assistance: 'వైద్య లేదా ఆరోగ్య సహాయం',
+    community_centre: 'కమ్యూనిటీ మద్దతు కేంద్రం',
+    general_donation: 'సాధారణ విరాళ కేంద్రం',
+    urgent_request: 'తక్షణ సహాయ అభ్యర్థన',
+    volunteer_activity: 'వాలంటీర్ కార్యకలాపం',
+    verified: 'ధృవీకరించబడిన సేవ',
+    pending_verification: 'ధృవీకరణ పెండింగ్‌లో ఉంది',
+    temp_closed: 'తాత్కాలికంగా మూసివేయబడింది',
+    needs_update: 'నవీకరించబడిన సమాచారం అవసరం',
+    demo_mode_banner: 'డెమో మోడ్ సక్రియంగా ఉంది — పరిశీలన కోసం నమూనా డేటా.',
+    privacy_notice: 'గౌరవ రక్షణ: మానవసాథి నిస్సహాయ వ్యక్తుల సున్నిత వివరాలను బహిర్గతం చేయదు.',
+    get_directions: 'దారి తెలుసుకోండి',
+    view_details: 'వివరాలు చూడండి',
+    report_inaccurate: 'సరికాని సమాచారాన్ని తెలియజేయండి',
+    emergency_call: 'అత్యవసర పరిస్థితుల్లో 112 లేదా 108 కు కాల్ చేయండి',
+  },
+  ta: {
+    app_name: 'மானவசாதி',
+    tagline: 'ஒவ்வொரு மனிதனும் அக்கறைக்குரியவர்',
+    meaning: 'பாரத தேசம் முழுவதும் மனிதநேயத்தின் தோழன்',
+    find_help_near_me: 'அருகிலுள்ள உதவியைக் கண்டறியவும்',
+    donate_essentials: 'அத்தியாவசியப் பொருட்களை தானமளிக்கவும்',
+    become_volunteer: 'தன்னார்வலராக இணையுங்கள்',
+    register_org: 'அமைப்பைப் பதிவு செய்யுங்கள்',
+    search_placeholder: 'உங்கள் ஊர், கிராமம் அல்லது அஞ்சல் குறியீட்டை உள்ளிடவும்...',
+    map_view: 'வரைபட பார்வை',
+    list_view: 'பட்டியல் பார்வை',
+    all_categories: 'அனைத்து உதவி பிரிவுகள்',
+    food_assistance: 'உணவு உதவி மையம்',
+    clothing_donation: 'ஆடை தான மையம்',
+    shelter_service: 'தங்குமிடம் மற்றும் இரவு இல்லம்',
+    hygiene_supplies: 'சுகாதார மற்றும் அத்தியாவசியப் பொருட்கள்',
+    medical_assistance: 'மருத்துவ உதவி',
+    community_centre: 'சமூக ஆதரவு மையம்',
+    general_donation: 'பொது உதவி மையம்',
+    urgent_request: 'அவசர உதவி கோரிக்கை',
+    volunteer_activity: 'தன்னார்வ பணி மையம்',
+    verified: 'சரிபார்க்கப்பட்ட சேவை',
+    pending_verification: 'சரிபார்ப்பு நிலுவையில் உள்ளது',
+    temp_closed: 'தற்காலிகமாக மூடப்பட்டுள்ளது',
+    needs_update: 'தகவல் புதுப்பிப்பு தேவை',
+    demo_mode_banner: 'டெமோ பயன்முறை செயலில் உள்ளது — மாதிரி விவரங்கள்.',
+    privacy_notice: 'கண்ணியப் பாதுகாப்பு: தேவைப்படுபவர்களின் தனிப்பட்ட இருப்பிட விவரங்களை மானவசாதி வெளியிடாது.',
+    get_directions: 'வழிகாட்டுதலைப் பெறவும்',
+    view_details: 'விவரங்களைக் காண்க',
+    report_inaccurate: 'தவறான தகவலை புகாரளிக்கவும்',
+    emergency_call: 'அவசர நிலைகளுக்கு 112 / 108 ஐ தொடர்பு கொள்ளவும்',
+  }
+};
