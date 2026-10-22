@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { store } from '../services/store';
-import {
+import type {
   AssistancePoint,
   Organization,
   CommunityNeedsReport,

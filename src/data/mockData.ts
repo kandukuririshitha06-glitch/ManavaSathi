@@ -1,4 +1,4 @@
-import {
+import type {
   AssistancePoint,
   CommunityNeedsReport,
   VolunteerTask,

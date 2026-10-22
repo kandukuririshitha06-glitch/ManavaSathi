@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { store } from '../services/store';
-import { AssistancePoint } from '../types';
+import type { AssistancePoint } from '../types';
 import { StatusBadge } from '../components/StatusBadge';
 import { INDIA_STATES_DATA } from '../utils/indiaGeo';
 import {

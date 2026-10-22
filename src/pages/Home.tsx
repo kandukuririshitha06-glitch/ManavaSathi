@@ -21,7 +21,8 @@ import {
 import { useLanguage } from '../context/LanguageContext';
 import { store } from '../services/store';
 import { INDIA_STATES_DATA } from '../utils/indiaGeo';
-import { InteractiveMap, MapMarkerData } from '../components/InteractiveMap';
+import { InteractiveMap } from '../components/InteractiveMap';
+import type { MapMarkerData } from '../components/InteractiveMap';
 
 export const Home: React.FC = () => {
   const { t } = useLanguage();

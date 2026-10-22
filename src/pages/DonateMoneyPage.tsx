@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { store } from '../services/store';
-import { Organization, MonetaryDonation } from '../types';
+import type { Organization, MonetaryDonation } from '../types';
 import { StatusBadge } from '../components/StatusBadge';
 import {
   HandHeart,

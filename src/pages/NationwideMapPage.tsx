@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { store } from '../services/store';
-import { AssistanceCategory, AssistancePoint } from '../types';
-import { InteractiveMap, MapMarkerData } from '../components/InteractiveMap';
+import type { AssistanceCategory, AssistancePoint } from '../types';
+import { InteractiveMap } from '../components/InteractiveMap';
+import type { MapMarkerData } from '../components/InteractiveMap';
 import { StatusBadge } from '../components/StatusBadge';
 import { INDIA_STATES_DATA } from '../utils/indiaGeo';
 import {

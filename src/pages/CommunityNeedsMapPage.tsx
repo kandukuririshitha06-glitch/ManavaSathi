@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { store } from '../services/store';
-import { CommunityNeedsReport, AssistanceCategory, NeedStatus, NeedUrgency } from '../types';
-import { InteractiveMap, MapMarkerData } from '../components/InteractiveMap';
+import type { CommunityNeedsReport, AssistanceCategory, NeedStatus, NeedUrgency } from '../types';
+import { InteractiveMap } from '../components/InteractiveMap';
+import type { MapMarkerData } from '../components/InteractiveMap';
 import { StatusBadge } from '../components/StatusBadge';
 import { INDIA_STATES_DATA } from '../utils/indiaGeo';
 import {

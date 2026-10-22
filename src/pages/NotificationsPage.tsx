@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { store } from '../services/store';
-import { AppNotification } from '../types';
+import type { AppNotification } from '../types';
 import {
   Bell,
   CheckCircle2,

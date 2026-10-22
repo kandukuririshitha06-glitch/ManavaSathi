@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { store } from '../services/store';
-import { UserRole } from '../types';
+import type { UserRole } from '../types';
 import { AlertCircle, Users, RefreshCw, Key, ShieldCheck, ChevronDown } from 'lucide-react';
 import { firebaseStatus } from '../services/firebase';
 

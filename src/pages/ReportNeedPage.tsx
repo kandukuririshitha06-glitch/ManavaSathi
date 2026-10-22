@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { store } from '../services/store';
-import { AssistanceCategory, NeedUrgency } from '../types';
+import type { AssistanceCategory, NeedUrgency } from '../types';
 import { INDIA_STATES_DATA, getDignifiedApproximateLocation } from '../utils/indiaGeo';
 import {
   AlertCircle,

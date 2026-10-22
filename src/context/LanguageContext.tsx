@@ -1,5 +1,6 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
-import { SupportedLanguage, SUPPORTED_LANGUAGES, translations } from '../i18n/translations';
+import { createContext, useContext, useState, useEffect } from 'react';
+import type { SupportedLanguage } from '../i18n/translations';
+import { SUPPORTED_LANGUAGES, translations } from '../i18n/translations';
 
 interface LanguageContextType {
   language: SupportedLanguage;

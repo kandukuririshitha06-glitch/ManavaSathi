@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { store } from '../services/store';
-import { CommunityNeedsReport, SupplyDonation, UserProfile } from '../types';
+import type { CommunityNeedsReport, SupplyDonation, UserProfile } from '../types';
 import { StatusBadge } from '../components/StatusBadge';
 import {
   User,

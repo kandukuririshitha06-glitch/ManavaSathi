@@ -1,5 +1,5 @@
 import React from 'react';
-import { ListingStatus, AvailabilityStatus, NeedStatus, NeedUrgency } from '../types';
+import type { ListingStatus, AvailabilityStatus, NeedStatus, NeedUrgency } from '../types';
 import { CheckCircle2, Clock, AlertTriangle, XCircle, Info, ShieldAlert } from 'lucide-react';
 
 interface StatusBadgeProps {

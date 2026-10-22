@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { store } from '../services/store';
-import { UserProfile, UserRole } from '../types';
+import type { UserProfile, UserRole } from '../types';
 import {
   User,
   ShieldCheck,

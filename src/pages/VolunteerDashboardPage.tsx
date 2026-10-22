@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { store } from '../services/store';
-import { VolunteerTask, VolunteerProfile } from '../types';
+import type { VolunteerTask, VolunteerProfile } from '../types';
 import { StatusBadge } from '../components/StatusBadge';
 import {
   Users,

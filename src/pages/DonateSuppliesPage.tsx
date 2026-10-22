@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { store } from '../services/store';
-import { AssistancePoint, Organization } from '../types';
+import type { AssistancePoint, Organization } from '../types';
 import { INDIA_STATES_DATA } from '../utils/indiaGeo';
 import {
   PackageCheck,

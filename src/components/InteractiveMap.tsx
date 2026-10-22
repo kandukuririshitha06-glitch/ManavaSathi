@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import L from 'leaflet';
-import { AssistanceCategory, AssistancePoint, CommunityNeedsReport, VolunteerTask } from '../types';
+import type { AssistanceCategory, AssistancePoint, CommunityNeedsReport, VolunteerTask } from '../types';
 import { INDIA_STATES_DATA } from '../utils/indiaGeo';
 import { StatusBadge } from './StatusBadge';
 import {
